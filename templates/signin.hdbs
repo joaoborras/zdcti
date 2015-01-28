@@ -1,0 +1,10 @@
+<form>
+	<label>URL:</label>
+	<input class="url" type="text" name="url" value="xsp1.pbxl.net"><br>
+	<label>User name:</label>
+	<input class="username" type="text" name="username" value="BWS_Test.zentestuser1@pbxl.net">
+	<label>Password:</label>
+	<input class="password" type="password" name="password" value="Borras123">
+	<br/>
+	<input class="signin" type="submit" value="Sign In">
+</form>

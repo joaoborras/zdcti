@@ -1,0 +1,15 @@
+<p>Error during log in!<p>
+{{#if response}}
+	<p>Error response text:</p>
+	<p>{{reponseText}}</p></br>
+{{/if}}
+{{#if status}}
+	<p>Error status:</p>
+	<p>{{status}}</p></br>
+{{/if}}
+{{#if message}}
+	<p>Error message:</p>
+	<p>{{message}}</p></br>
+{{/if}}	
+<p>Please check your data and log in again.</p>
+<button class="error">OK</button>

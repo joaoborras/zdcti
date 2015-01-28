@@ -1,0 +1,5 @@
+<p>Incoming call from <span>{{callerid}}</span></p><br/>
+<form>
+	<input class="acceptcall" type="submit" value="Accept">
+	<input class="rejectcall" type="submit" value="Reject">
+</form>

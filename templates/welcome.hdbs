@@ -1,0 +1,2 @@
+<p>Welcome {{firstname}} {{lastname}} !<p><br/>
+<p>Please wait while we connect to BW...</p>

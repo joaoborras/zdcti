@@ -1,0 +1,3 @@
+{{#each users}}
+	<p class="phonenumber">{{phone}}</p><br>
+{{/each}}

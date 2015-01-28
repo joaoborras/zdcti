@@ -1,0 +1,4 @@
+<p>Call status: connected</p>
+<form>
+	<input class="disconnect" type="submit" value="Disconnect">
+</form>

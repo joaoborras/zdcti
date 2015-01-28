@@ -1,0 +1,71 @@
+<form>
+	<input class="destination" type="text" name="destination" placeholder="enter name or number"><br/>
+	<input class="call" type="submit" value="Call">
+	<input class="cancelcall" type="submit" value="Cancel">
+	<!input class="searchcustomer" type="submit" value="Search"!>
+	<input class="clearvalue" type="submit" value="Clear">
+</form>
+
+
+
+<table>
+		<tr>
+	        <td id="title" colspan=3>
+            <img id="logo" src="{{assetURL "logo.png"}}" alt="PBXL" width="50px">
+            <img id="show_hidesettings" title='Settings' src="settings.png" width="9px" alt="settings"></td>
+	    </tr>
+	    <tr>
+	        <td id='visor' colspan=3>
+	            <sup>User:<span id='loggeduser'></span></sup>
+	                <p id='number'></p>
+
+	            <input id='destination' type='text' placeholder='input destination number' autocomplete="on"/>
+	        </td>
+	    </tr> 
+	</table>
+	<div id="dialpad">
+	    <table>   
+	        <tr>
+	            <td class='digit'>1</td>
+	            <td class='digit'>2</td>
+	            <td class='digit'>3</td>
+	        </tr>
+	        <tr>
+	            <td class='digit'>4</td>
+	            <td class='digit'>5</td>
+	            <td class='digit'>6</td>
+	        </tr>
+	        <tr>
+	            <td class='digit'>7</td>
+	            <td class='digit'>8</td>
+	            <td class='digit'>9</td>
+	        </tr>
+	        <tr>
+	            <td class='digit'>*</td>
+	            <td class='digit'>0</td>
+	            <td class='digit'>#</td>
+	        </tr>
+	    </table>
+	</div>
+	<div id="buttons">
+	<table>
+	    <tr>
+	        <td id='history' title='Call History'><img src="{{assetURL "history.png"}}" width="18" alt="history"></td>
+	        <td id='address' title="Displays User's Directory"><img src="{{assetURL "address.png"}}" width="16" alt="address book"></td>
+	        <td id='clear' title='Clear the number input field'><img src="clear.png" width="15" alt="clear"></td>
+	        <td id='delete' title='Delete the last digit in number input box'><img src="{{assetURL "delete.png"}}" width="17" alt="delete"></td>
+	    </tr>
+	    <tr>
+	        <td id="show_hidedialpad" title='Press to Show/Hide dialpad'><img src="{{assetURL "dialpad.png"}}" width="18" alt="show dialpad"></td>
+	        <td id='hold' title='Press to Hold/Retrieve call'><img src="{{assetURL "hold.png"}}" width="22" alt="hold"></td>
+	        <td id='transfer' title='Press to transfer the call'><img src="{{assetURL "transfer.png"}}" width="30" alt="transfer"></td>
+	        <td id='call' title='Press to initiate/answer a call' class='pulse'><img src="{{assetURL "call.png"}}" width="18" alt="call"></td>
+	    </tr>
+	</table>
+    </div>
+
+
+
+{{#each users}}
+	<p class="phonenumber">{{phone}}</p><br>
+{{/each}}
